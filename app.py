@@ -4,10 +4,8 @@ import numpy as np
 from tensorflow.keras.preprocessing import image
 import pickle
 
-# ✅ Load trained model
 model = tf.keras.models.load_model("butterfly_cnn_model.h5")
 
-# ✅ Load label map
 with open("label_map.pkl", "rb") as f:
     label_map = pickle.load(f)
 
